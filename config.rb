@@ -41,10 +41,9 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-end
 
-# Since project pages deploy to a subdirectory, assets and page paths are relative to the organization or
-# user that owns the repo. If you're treating the project pages as a standalone site, you can tell
-# Middleman to generate relative paths for assets and links with these settings in the build configuration in config.rb
-activate :relative_assets
-set :relative_links, true
+  # Since project pages deploy to a subdirectory, assets and page paths are relative to the organization or
+  # user that owns the repo. If you're treating the project pages as a standalone site, you can tell
+  # Middleman to generate relative paths for assets and links with these settings in the build configuration in config.rb
+  set :http_prefix, "/aleks_rent/"
+end
