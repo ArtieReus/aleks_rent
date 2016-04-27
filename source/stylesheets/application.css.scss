@@ -1,7 +1,6 @@
-html,body {
-  background: image-url("aleks_rent2.JPG") no-repeat center center fixed;
-  -webkit-background-size: cover; /* For WebKit*/
-  -moz-background-size: cover;    /* Mozilla*/
-  -o-background-size: cover;      /* Opera*/
-  background-size: cover;         /* Generic*/
-}
+//@import "bootstrap-sprockets";
+//@import "bootstrap";
+@import "bootstrap.css";
+@import "responsive.css";
+
+@import "main_style.css";
