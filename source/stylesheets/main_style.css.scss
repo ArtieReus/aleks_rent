@@ -134,9 +134,7 @@ p { margin:0 0 20px; }
 	text-decoration:none;
 	letter-spacing:-3px;
 }
-:
-			
-			.logo .logo_h__txt .logo_link:hover, .logo .logo_h__txt .logo_link:visited {
+.logo .logo_h__txt .logo_link:hover, .logo .logo_h__txt .logo_link:visited {
 	text-decoration:none;
 	color:inherit;
 }
@@ -1441,7 +1439,7 @@ select::-moz-placeholder, textarea::-moz-placeholder, input[type="text"]::-moz-p
 	margin-left:-25px;
 	margin-top:-25px;
 	border-radius:25px;
-	background:url(parallax-slider/img/spinner.GIF) 50% 50% #fff no-repeat;
+	background: image-url("parallax/spinner.GIF") 50% 50% #fff no-repeat;
 }
 @media (min-width: 1200px) {
 	.parallax-slider { height:680px; }

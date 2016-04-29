@@ -15,7 +15,6 @@ gem 'middleman-compass', '>= 4.0.0'
 
 gem "jquery-middleman"
 gem 'middleman-sprockets', '~> 4.0.0.rc.2'
-gem "bootstrap-sass", '2.3.0', :require => false
 
 # deploy
 gem 'middleman-gh-pages'
