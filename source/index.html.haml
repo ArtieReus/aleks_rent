@@ -19,36 +19,36 @@
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color2
                       %a{href:'#'}
-                        About
+                        Rentals
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color3
                       %a{href:'#'}
-                        Portfolio
+                        About us
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color4
                       %a{href:'#'}
-                        Blog
+                        Policies
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item.menu-item-type-post_type.menu-item-object-page.custom-color5
                       %a{href:'#'}
-                        Contacts
+                        Contact
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
 
-#parallax-slider-5722e3cc6fd95.parallax-slider.simple-fade-eff
+#parallax-slider-index.parallax-slider.simple-fade-eff
   %ul.baseList
-    %li{data: {"preview" => "#{image_path 'parallax.JPG'}", "thumb-url" => "", "ulr-link" => ""}}
+    %li{data: {"preview" => "#{image_path 'slider-img1.jpg'}", "thumb-url" => "", "ulr-link" => ""}}
       .slider_caption
         Discover Barcelona
-    %li{data: {"preview" => "#{image_path 'parallax2.JPG'}", "thumb-url" => "", "ulr-link" => ""}}
+    %li{data: {"preview" => "#{image_path 'slider-img2.jpg'}", "thumb-url" => "", "ulr-link" => ""}}
       .slider_caption
         We are in El Paral.lel
-    %li{data: {"preview" => "#{image_path 'parallax3.JPG'}", "thumb-url" => "", "ulr-link" => ""}}
+    %li{data: {"preview" => "#{image_path 'slider-img3.jpg'}", "thumb-url" => "", "ulr-link" => ""}}
       .slider_caption
-        Bikes, scooters, electric scooters, quads, etc.
+        Bikes, scooters, electric scooters and quads
 
 
 .motopress-wrapper.content-holder.clearfix
@@ -60,5 +60,50 @@
             %h2
               What we do?
             %p
-              Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.
+              Aleks Rent is a bike rentals shop in El Parallel, Barcelona's Broadway. A district with
+              a quality programme of performances embracing a variety of musical genres that provides an addition
+              to the offerings of the other theaters.
+            %p
+              We rent bikes, scooters, electric scooters and quads using a simple philosophy, work fast and good and with reasonable prices.
 
+-#%footer
+  .container
+    .row
+      .span12
+        .footer-widgets
+          .row
+            .span3
+            .span3
+            .span6
+              .textwidget
+                .google-map-api
+                  #map-canvas-bcn.gmap
+                  %script{src: "https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"}
+                  :javascript
+                    var map;
+                    var coordData = new google.maps.LatLng(40.7033121, -73.979681);
+                    var marker;
+
+                    function initialize() {
+                      var mapOptions = {
+                        zoom: 12,
+                        center: coordData,
+                        scrollwheel: false,
+                        panControl: true,
+                        zoomControl: true,
+                        mapTypeControl: false,
+                        scaleControl: false,
+                        streetViewControl: false,
+                        overviewMapControl: false,
+                        styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
+                      }
+                      var map = new google.maps.Map(document.getElementById("map-canvas-5726f764090dd"), mapOptions);
+                      map.panBy(0, 0);
+
+                      marker = new google.maps.Marker({
+                        map:map,
+                        draggable:true,
+                        position: coordData
+                      });
+                    }
+                    google.maps.event.addDomListener(window, "load", initialize);

@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
     liteModeSwitcher = true;
   }
 
-  jQuery('#parallax-slider-5722e3cc6fd95').parallaxSlider({
+  jQuery('#parallax-slider-index').parallaxSlider({
     parallaxEffect: "parallax_effect_high"
     ,	parallaxInvert: false			,	animateLayout: "simple-fade-eff"
     ,	duration: 1500			,	autoSwitcher: true			,	autoSwitcherDelay: 10000			,	scrolling_description: true			,	slider_navs: true			,	slider_pagination: "none_pagination"
