@@ -9,6 +9,7 @@
  * Documentation
  *   http://github.com/mambows/mobilemenu
  */
+
 (function($){
 	$.fn.mobileMenu = function(options) {
 		var defaults = {
