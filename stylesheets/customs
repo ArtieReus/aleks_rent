@@ -1,0 +1,56 @@
+/* line 1, customs.scss */
+body {
+  background-color: #f0f0f0; }
+
+/* line 5, customs.scss */
+h1 {
+  font: bold 50px/60px Raleway;
+  color: #464646; }
+
+/* line 6, customs.scss */
+h2 {
+  font: bold 45px/54px Raleway;
+  color: #464646; }
+
+/* line 7, customs.scss */
+h3 {
+  font: bold 45px/54px Raleway;
+  color: #464646; }
+
+/* line 8, customs.scss */
+h4 {
+  font: bold 25px/30px Raleway;
+  color: #464646; }
+
+/* line 9, customs.scss */
+h5 {
+  font: bold 20px/24px Raleway;
+  color: #464646; }
+
+/* line 10, customs.scss */
+h6 {
+  font: normal 12px/18px Arial,Helvetica,sans-serif;
+  color: #333333; }
+
+/* line 11, customs.scss */
+body {
+  font-weight: normal; }
+
+/* line 12, customs.scss */
+.logo_h__txt, .logo_link {
+  font: bold 70px/70px Raleway;
+  color: #535353; }
+
+/* line 13, customs.scss */
+.sf-menu > li > a {
+  font: bold 25px/28px Raleway;
+  color: #ffffff; }
+
+/* line 14, customs.scss */
+.nav.footer-nav a {
+  font: normal 13px/20px Raleway;
+  color: #888888; }
+
+/* line 16, customs.scss */
+.main-holder {
+  margin-top: 30px; }
