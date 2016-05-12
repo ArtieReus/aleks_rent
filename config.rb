@@ -16,12 +16,16 @@ page '/*.txt', layout: false
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
+###
 # General configuration
+###
+
+activate :i18n, :mount_at_root => :en, :langs => [:es, :en]
+activate :sprockets
 
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :sprockets
 end
 
 ###
@@ -42,8 +46,6 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-
-  activate :sprockets
 
   # Since project pages deploy to a subdirectory, assets and page paths are relative to the organization or
   # user that owns the repo. If you're treating the project pages as a standalone site, you can tell

@@ -1,0 +1,8 @@
+---
+es:
+  test: "hola"
+  index:
+    parallax:
+      slider_caption1: "Descubre Barcelona"
+      slider_caption2: "Estamos en El Paral.lel"
+      slider_caption3: "Bicicletas, scooters, patinetes electricos y quads"
