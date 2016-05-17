@@ -35,7 +35,7 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
   def local_path(path)
-    if locale == "en"
+    if I18n.locale.to_s == "en"
       "/#{path}"
     else
       "/#{I18n.locale.to_s}/#{path}"
