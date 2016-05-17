@@ -3,6 +3,28 @@
     .container
       .row
         .span12
+          .top-plane
+            .row
+              .span9.header-widget
+                #text-7
+                  .textwidget
+                    .header-info-holder
+                      %i.icon-map-marker
+                      Carrer de Vila i Vilà, 80, 08004 Barcelona
+                    .header-info-holder
+                      %i.icon-mobile-phone
+                      +34 654 552 753
+                    .header-info-holder
+                      %i.icon-envelope
+                      aleksrentbcn@mail.ru
+              .span3.social-nets-wrapper
+                %ul.social
+                  %li
+                    = link_to "/index.html" do
+                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-gb", alt: "English"}
+                  %li
+                    = link_to "/es/index.html" do
+                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-es", alt: "Spanish"}
           .menu-holder
             .row
               .span3
@@ -13,28 +35,23 @@
                 %nav.nav.nav__primary.clearfix
                   %ul#topnav.sf-menu.sf-js-enabled
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color1.active-menu-item
-                      %a{href:'#'}
-                        Home
+                      = link_to "Home", local_path("index.html")
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color2
-                      %a{href:'#'}
-                        Rentals
+                      = link_to "Rentals", local_path("rentals.html")
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color3
-                      %a{href:'#'}
-                        About us
+                      = link_to "About us", local_path("about_us.html")
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color4
-                      %a{href:'#'}
-                        Policies
+                      = link_to "Policies", local_path("policies.html")
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
                     %li.menu-item.menu-item.menu-item-type-post_type.menu-item-object-page.custom-color5
-                      %a{href:'#'}
-                        Contact
+                      = link_to "Contact", local_path("contact.html")
                       .menu-item-hover-plane-1
                       .menu-item-hover-plane-2
 
