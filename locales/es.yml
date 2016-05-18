@@ -1,6 +1,13 @@
 ---
 es:
   test: "hola"
+  header:
+    nav:
+      menu_item_home: "Inicio"
+      menu_item_rentals: "Alquiler"
+      menu_item_about: "Servicios"
+      menu_item_policies: "Condiciones"
+      menu_item_contact: "Contacto"
   index:
     parallax:
       slider_caption1: "Descubre Barcelona"

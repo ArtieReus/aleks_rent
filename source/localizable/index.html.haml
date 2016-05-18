@@ -1,60 +1,3 @@
-.main-holder
-  %header.motopress-wrapper.header
-    .container
-      .row
-        .span12
-          .top-plane
-            .row
-              .span9.header-widget
-                #text-7
-                  .textwidget
-                    .header-info-holder
-                      %i.icon-map-marker
-                      Carrer de Vila i Vilà, 80, 08004 Barcelona
-                    .header-info-holder
-                      %i.icon-mobile-phone
-                      +34 654 552 753
-                    .header-info-holder
-                      %i.icon-envelope
-                      aleksrentbcn@mail.ru
-              .span3.social-nets-wrapper
-                %ul.social
-                  %li
-                    = link_to "/index.html" do
-                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-gb", alt: "English"}
-                  %li
-                    = link_to "/es/index.html" do
-                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-es", alt: "Spanish"}
-          .menu-holder
-            .row
-              .span3
-                .logo.pull-left
-                  %a{href: '#', class: 'logo_h logo_h__img'}
-                    = image_tag 'logo.png'
-              .span9
-                %nav.nav.nav__primary.clearfix
-                  %ul#topnav.sf-menu.sf-js-enabled
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color1.active-menu-item
-                      = link_to "Home", local_path("index.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color2
-                      = link_to "Rentals", local_path("rentals.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color3
-                      = link_to "About us", local_path("about_us.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color4
-                      = link_to "Policies", local_path("policies.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item.menu-item-type-post_type.menu-item-object-page.custom-color5
-                      = link_to "Contact", local_path("contact.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-
 #parallax-slider-index.parallax-slider.simple-fade-eff
   %ul.baseList
     %li{data: {"preview" => "#{image_path 'slider-img1.jpg'}", "thumb-url" => "", "ulr-link" => ""}}
@@ -68,7 +11,7 @@
         = t('index.parallax.slider_caption3')
 
 
-.motopress-wrapper.content-holder.clearfix
+.content-holder.clearfix
   .container
     .row
       .span12
@@ -82,65 +25,4 @@
               to the offerings of the other theaters.
             %p
               We rent bikes, scooters, electric scooters and quads using a simple philosophy, work fast and good and with reasonable prices.
-
-%footer.footer
-  .container
-    .row
-      .span12
-        .footer-widgets
-          .row
-            .span3
-              %div
-                %h4 About
-                .menu-footer-custom-menu-1-container
-                  %ul.menu
-                    .menu-item.menu-item-type-custom
-                      %a{href: "#"} Test
-            .span3
-              %div
-                %h4 Services
-                .menu-footer-custom-menu-1-container
-                  %ul.menu
-                    .menu-item.menu-item-type-custom
-                      %a{href: "#"} Test
-
-            .span6
-              .textwidget
-                .google-map-api
-                  #map-canvas-bcn.gmap
-                  %script{src: "https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&key=AIzaSyATIrKARZCd250_cXZihqPt6gSwjnwHvHc"}
-                  :javascript
-                    var map;
-                    var coordData = new google.maps.LatLng(41.3744283, 2.168358600000033);
-                    var marker;
-
-                    function initialize() {
-                      var mapOptions = {
-                        zoom: 12,
-                        center: coordData,
-                        scrollwheel: false,
-                        panControl: true,
-                        zoomControl: true,
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        streetViewControl: false,
-                        overviewMapControl: false,
-                        styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}]
-                      }
-                      var map = new google.maps.Map(document.getElementById("map-canvas-bcn"), mapOptions);
-                      map.panBy(0, 0);
-
-                      marker = new google.maps.Marker({
-                        map:map,
-                        draggable:true,
-                        position: coordData
-                      });
-                    }
-                    google.maps.event.addDomListener(window, "load", initialize);
-
-        .row.copyright
-          .span6
-            .footer-text
-              &copy; 2016 Aleks Rent
-
 

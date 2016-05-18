@@ -122,7 +122,7 @@ p { margin:0 0 20px; }
 .logo {
 //	padding:25px 5% 0;
 //	width:90%;
-	height:174px;
+  	height: 140px;
 	text-align:center;
 	background:#fff;
 }
@@ -146,18 +146,24 @@ p { margin:0 0 20px; }
 	}
 }
 @media (min-width: 1200px) {
-  @media (min-width: 1200px) {
-		//padding-top:40px;
-		height:174px; //134px;
-	}
+  .logo {
+	height:174px;
+  }
 }
 @media (min-width: 768px) and (max-width: 979px) {
 	.logo {
-		width:80%;
-		padding:23px 10% 0;
-		height:85px;
+		width:100%;
+	  	height: 108px;
 	}
 }
+
+@media (max-width: 768px) {
+  .logo {
+	width:100%;
+	height:174px;
+  }
+}
+
 .logo_tagline {
 	margin:0;
 	padding:0;

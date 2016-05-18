@@ -1,6 +1,13 @@
 ---
 en:
   test: "hello"
+  header:
+    nav:
+      menu_item_home: "Home"
+      menu_item_rentals: "Rentals"
+      menu_item_about: "About us"
+      menu_item_policies: "Policies"
+      menu_item_contact: "Contact"
   index:
     parallax:
       slider_caption1: "Discover Barcelona"
