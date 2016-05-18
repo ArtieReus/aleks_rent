@@ -50,7 +50,3 @@ body {
 .nav.footer-nav a {
   font: normal 13px/20px Raleway;
   color: #888888; }
-
-/* line 16, customs.scss */
-.main-holder {
-  margin-top: 30px; }
