@@ -3,8 +3,7 @@
   = partial "layouts/head"
 
   %body
-    = partial "layouts/header"
-
-    = yield
-
-    = partial "layouts/footer"
+    .main-holder
+      = partial "layouts/header"
+      = yield
+      = partial "layouts/footer"

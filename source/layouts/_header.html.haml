@@ -1,56 +1,55 @@
-.main-holder
-  %header.motopress-wrapper.header
-    .container
-      .row
-        .span12
-          .top-plane
-            .row
-              .span9.header-widget
-                #text-7
-                  .textwidget
-                    .header-info-holder
-                      %i.icon-map-marker
-                      Carrer de Vila i Vilà, 80, 08004 Barcelona
-                    .header-info-holder
-                      %i.icon-mobile-phone
-                      +34 654 552 753
-                    .header-info-holder
-                      %i.icon-envelope
-                      aleksrentbcn@mail.ru
-              .span3.social-nets-wrapper
-                %ul.social
-                  %li
-                    = link_to "/index.html" do
-                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-gb", alt: "English"}
-                  %li
-                    = link_to "/es/index.html" do
-                      %img{src: "#{image_path 'blank.gif'}", class: "flag flag-es", alt: "Spanish"}
-          .menu-holder
-            .row
-              .span3
-                .logo.pull-left
-                  %a{href: '#', class: 'logo_h logo_h__img'}
-                    = image_tag 'logo.png'
-              .span9
-                %nav.nav.nav__primary.clearfix
-                  %ul#topnav.sf-menu.sf-js-enabled
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color1.active-menu-item
-                      = link_to t('header.nav.menu_item_home'), local_path("index.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color2
-                      = link_to t('header.nav.menu_item_rentals'), local_path("rentals.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color3
-                      = link_to t('header.nav.menu_item_about'), local_path("about_us.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color4
-                      = link_to t('header.nav.menu_item_policies'), local_path("policies.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
-                    %li.menu-item.menu-item.menu-item-type-post_type.menu-item-object-page.custom-color5
-                      = link_to t('header.nav.menu_item_contact'), local_path("contact.html")
-                      .menu-item-hover-plane-1
-                      .menu-item-hover-plane-2
+%header.header
+  .container
+    .row
+      .span12
+        .top-plane
+          .row
+            .span9.header-widget
+              #text-7
+                .textwidget
+                  .header-info-holder
+                    %i.icon-map-marker
+                    Carrer de Vila i Vilà, 80, 08004 Barcelona
+                  .header-info-holder
+                    %i.icon-mobile-phone
+                    +34 654 552 753
+                  .header-info-holder
+                    %i.icon-envelope
+                    aleksrentbcn@mail.ru
+            .span3.social-nets-wrapper
+              %ul.social
+                %li
+                  = link_to "/index.html" do
+                    %img{src: "#{image_path 'blank.gif'}", class: "flag flag-gb", alt: "English"}
+                %li
+                  = link_to "/es/index.html" do
+                    %img{src: "#{image_path 'blank.gif'}", class: "flag flag-es", alt: "Spanish"}
+        .menu-holder
+          .row
+            .span3
+              .logo.pull-left
+                %a{href: '#', class: 'logo_h logo_h__img'}
+                  = image_tag 'logo.png'
+            .span9
+              %nav.nav.nav__primary.clearfix
+                %ul#topnav.sf-menu.sf-js-enabled
+                  %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color1.active-menu-item
+                    = link_to t('header.nav.menu_item_home'), local_path("index.html")
+                    .menu-item-hover-plane-1
+                    .menu-item-hover-plane-2
+                  %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color2
+                    = link_to t('header.nav.menu_item_rentals'), local_path("rentals.html")
+                    .menu-item-hover-plane-1
+                    .menu-item-hover-plane-2
+                  %li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.custom-color3
+                    = link_to t('header.nav.menu_item_about'), local_path("about_us.html")
+                    .menu-item-hover-plane-1
+                    .menu-item-hover-plane-2
+                  %li.menu-item.menu-item-type-custom.menu-item-object-custom.custom-color4
+                    = link_to t('header.nav.menu_item_policies'), local_path("policies.html")
+                    .menu-item-hover-plane-1
+                    .menu-item-hover-plane-2
+                  %li.menu-item.menu-item.menu-item-type-post_type.menu-item-object-page.custom-color5
+                    = link_to t('header.nav.menu_item_contact'), local_path("contact.html")
+                    .menu-item-hover-plane-1
+                    .menu-item-hover-plane-2
