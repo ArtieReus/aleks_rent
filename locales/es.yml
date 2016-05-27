@@ -13,3 +13,10 @@ es:
       slider_caption1: "Descubre Barcelona"
       slider_caption2: "Estamos en El Paral.lel"
       slider_caption3: "Bicicletas, scooters, patinetes electricos y quads"
+  contact:
+    title1: "Datos de contacto"
+    title2: "Formulario de contacto"
+    text1: "¡Escríbenos!"
+    text2: "Ya sea si tienes algún tipo de interés, alguna duda técnica , una sugerencia o simplemente quieres decir <b>hola</b>, ponte en contacto con nosotros."
+    text3: "También encuéntranos en:"
+    open_times: "Abierto todos los días entre 9:00 y 21:00 h"

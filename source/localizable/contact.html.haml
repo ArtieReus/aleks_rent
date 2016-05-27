@@ -7,3 +7,53 @@
             %section.title-section
               %h1.title-header
                 = t('header.nav.menu_item_contact')
+        #content.row
+          .span12
+            .row
+              .span4
+                %h5
+                  = t('contact.text1')
+                %p
+                  = t('contact.text2')
+                %address
+                  %strong
+                    Carrer de Vila i Vilà, 80, 08004 Barcelona
+                  %br
+                  Telephones:
+                  %br
+                  +34 654 552 753
+                  %br
+                  +34 622 133 324
+                  %br
+                  +34 633 600 655
+                  %br
+                  E-mail:
+                  %a{href: "mailto:aleksrentbcn@mail.ru"}
+                    aleksrentbcn@mail.ru
+                %p
+                  = t('contact.text3')
+                %p
+                  %b Facebook:
+                  %a{href: "https://www.facebook.com/Aleks-Rent-Barcelona-590487227783084/"}
+                    https://www.facebook.com/Aleks-Rent-Barcelona
+                %h5
+                  = t('contact.open_times')
+              .span8
+                .wpcf7
+                  %form{action: "#", method: "Post", class: "wpcf7-form", novalidate: "novalidate"}
+                    .row-fluid
+                      %p.span4.field
+                        %span.your-name
+                          %input{type: "text", name: "your-name", value: "", size: "40", class: "", "aria-required" => "true", "aria-invalid" => "false", placeholder: "Name:"}
+                      %p.span4.field
+                        %span.your-email
+                          %input{type: "text", name: "your-email", value: "", size: "40", class: "", "aria-required" => "true", "aria-invalid" => "false", placeholder: "E-mail:"}
+                      %p.span4.field
+                        %span.your-phone
+                          %input{type: "text", name: "your-phone", value: "", size: "40", class: "", "aria-invalid" => "false", placeholder: "Phone:"}
+                    %p.field
+                      %span.your-message
+                        %textarea{name: "your-message", cols: "40", rows: "10", "aria-invalid" => "false", placeholder: "Message:"}
+                    %p.submit-wrap
+                      %input{type: "reset", value: "clear", class: "btn btn-primary"}
+                      %input{type: "submit", value: "send", class: "btn btn-primary"}
