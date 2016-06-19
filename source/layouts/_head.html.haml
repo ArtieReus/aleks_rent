@@ -1,14 +1,15 @@
-%head
-  %meta{ :charset => "utf-8" }/
-  %meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }/
-  %meta{ name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }/
+%meta{ :charset => "utf-8" }/
+%meta{ 'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge,chrome=1' }/
+%meta{ name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }/
 
-  %title
-    = "Aleks Rent #{current_page.data.title}"
+%title
+  = "Aleks Rent #{current_page.data.title}"
 
-  %link{rel: "stylesheet", id: "font-awesome-css", href: "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?ver=3.2.1", type: "text/css", media: "all"}
-  %link{rel: "stylesheet", id: "options_typography_Raleway:100-css", href: "//fonts.googleapis.com/css?family=Raleway:100&amp;subset=latin", type: "text/css", media: "all"}
+%link{rel: "stylesheet", id: "font-awesome-css", href: "//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css?ver=3.2.1", type: "text/css", media: "all"}
+%link{rel: "stylesheet", id: "options_typography_Raleway:100-css", href: "//fonts.googleapis.com/css?family=Raleway:100&amp;subset=latin", type: "text/css", media: "all"}
 
-  = stylesheet_link_tag :application
+= stylesheet_link_tag :application
 
-  = javascript_include_tag :application
+= javascript_include_tag :application
+
+= yield_content :custom_js

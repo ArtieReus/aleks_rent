@@ -1,18 +1,6 @@
-jQuery(function(){
-  jQuery('.sf-menu').mobileMenu({defaultText: "Navigate to..."});
-});
-
+//= require_tree ./parallax
 
 jQuery(document).ready(function($) {
-  if(!device.mobile() && !device.tablet()){
-    liteModeSwitcher = false;
-  }else{
-    liteModeSwitcher = true;
-  }
-  if($.browser.msie && parseInt($.browser.version) < 9){
-    liteModeSwitcher = true;
-  }
-
   jQuery('#parallax-slider-index').parallaxSlider({
     parallaxEffect: "parallax_effect_high"
     ,	parallaxInvert: false			,	animateLayout: "simple-fade-eff"

@@ -3,6 +3,4 @@
 
 //= require_tree ./CherryFramework
 
-//= require_tree ./parallax
-
-//= require index.js
+//= require global.js

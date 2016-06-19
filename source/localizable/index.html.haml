@@ -1,3 +1,6 @@
+- content_for :custom_js do
+  = javascript_include_tag "index"
+
 #parallax-slider-index.parallax-slider.simple-fade-eff
   %ul.baseList
     %li{data: {"preview" => "#{image_path 'slider-img1.jpg'}", "thumb-url" => "", "ulr-link" => ""}}

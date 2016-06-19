@@ -1,8 +1,9 @@
 !!! 5
 %html{:lang => "en"}
-  = partial "layouts/head"
+  %head
+    = partial "layouts/head"
 
-  %body
+  %body.page-template-page-Portfolio2Cols-filterable
     .main-holder
       = partial "layouts/header"
       = yield

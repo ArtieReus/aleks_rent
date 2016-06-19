@@ -1,3 +1,6 @@
+- content_for :custom_js do
+  = javascript_include_tag "rentals"
+
 .content-holder.clearfix
   .container
     .row
@@ -7,3 +10,53 @@
             %section.title-section
               %h1.title-header
                 = t('header.nav.menu_item_rentals')
+        #content
+          %ul#rentals-grid.thumbnails.portfolio-2cols.isotope{data: "2cols"}
+
+            %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
+              .portfolio_item_holder
+                %figure
+                  .thumbnail.thumbnail__portfolio
+                    %a.image-wrap{href: "#"}
+                      = image_tag 'classic_bike.jpg'
+                .caption.caption__portfolio
+                  %h3
+                    In faucibus
+                  %p.excerpt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+
+            %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
+              .portfolio_item_holder
+                %figure
+                  .thumbnail.thumbnail__portfolio
+                    %a.image-wrap{href: "#"}
+                      = image_tag 'classic_bike.jpg'
+                .caption.caption__portfolio
+                  %h3
+                    In faucibus
+                  %p.excerpt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+
+            %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
+              .portfolio_item_holder
+                %figure
+                  .thumbnail.thumbnail__portfolio
+                    %a.image-wrap{href: "#"}
+                      = image_tag 'classic_bike.jpg'
+                .caption.caption__portfolio
+                  %h3
+                    In faucibus
+                  %p.excerpt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+
+            %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
+              .portfolio_item_holder
+                %figure
+                  .thumbnail.thumbnail__portfolio
+                    %a.image-wrap{href: "#"}
+                      = image_tag 'classic_bike.jpg'
+                .caption.caption__portfolio
+                  %h3
+                    In faucibus
+                  %p.excerpt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
