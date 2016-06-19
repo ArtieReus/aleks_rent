@@ -52,10 +52,7 @@ jQuery(document).ready(function(){
 	jQuery('.accordion').on('hide', function (e) {
 		jQuery(this).find('.accordion-toggle').not(jQuery(e.target)).removeClass('active');
 	});
-// ---------------------------------------------------------
-// Isotope Init
-// ---------------------------------------------------------
-	jQuery("#rentals-grid").css({"visibility" : "visible"});
+
 // ---------------------------------------------------------
 // Menu Android
 // ---------------------------------------------------------

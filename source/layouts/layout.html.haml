@@ -3,7 +3,7 @@
   %head
     = partial "layouts/head"
 
-  %body.page-template-page-Portfolio2Cols-filterable
+  %body{class: (yield_content :custom_body_class)}
     .main-holder
       = partial "layouts/header"
       = yield
