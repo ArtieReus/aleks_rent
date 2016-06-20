@@ -2,31 +2,54 @@ jQuery(document).ready(function($) {
   var $container = $('#rentals-grid'),
     items_count = $(".portfolio_item").size();
 
-  $(window).load(function(){
-    var selector = window.location.hash.replace( /^#category/, '.term' );
 
-    if(selector == "#"){
-      selector = '';
-    }
-
-    setColumnWidth();
-    $container.isotope({
-      itemSelector : '.portfolio_item',
-      hiddenClass : 'portfolio_hidden',
-      resizable : false,
-      transformsEnabled : true,
-      layoutMode: 'fitRows',
-      filter: selector
-    })
-
-    $('#filters .active').removeClass('active')
-    $('#filters li a[data-filter="'+selector+'"]').parent('li').addClass('active');
-    change_hash(selector);
-
-    $(window).on("debouncedresize", function( event ) {
-      arrange();
-    });
+  $('.portfolio_item').magnificPopup({
+    delegate: '.thumbnail > a',
+    type: 'image',
+    removalDelay: 500,
+    mainClass: 'mfp-zoom-in',
+    callbacks: {
+      beforeOpen: function() {
+        // just a hack that adds mfp-anim class to markup
+        this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
+      },
+      open: function() {
+        not_resizes = true;
+      },
+      close: function() {
+        not_resizes = false;
+      }
+    },
+    gallery: {enabled:true}
   });
+
+  //$(window).load(function(){
+  //  var selector = window.location.hash.replace( /^#category/, '.term' );
+  //
+  //  if(selector == "#"){
+  //    selector = '';
+  //  }
+  //
+  //  setColumnWidth();
+  //  $container.isotope({
+  //    itemSelector : '.portfolio_item',
+  //    hiddenClass : 'portfolio_hidden',
+  //    resizable : false,
+  //    transformsEnabled : true,
+  //    layoutMode: 'fitRows',
+  //    filter: selector
+  //  })
+  //
+  //  $('#filters .active').removeClass('active')
+  //  $('#filters li a[data-filter="'+selector+'"]').parent('li').addClass('active');
+  //  change_hash(selector);
+  //
+  //  $(window).on("debouncedresize", function( event ) {
+  //    arrange();
+  //  });
+  //});
+
+
 
   function getNumColumns(){
     var $folioWrapper = $('#rentals-grid').data('cols');
