@@ -15,52 +15,80 @@
                 = t('header.nav.menu_item_rentals')
         #content.row
           .span12
-            %ul#rentals-grid.thumbnails.portfolio-2cols{data: {cols: "2cols"}}
-
-              %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
-                .portfolio_item_holder
-                  %figure
+            .row
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
                     .thumbnail.thumbnail__portfolio
-                      %a.image-wrap{href: '/images/classic_bike.jpg'}
-                        = image_tag 'classic_bike.jpg'
-                  .caption.caption__portfolio
-                    %h3
-                      In faucibus
-                    %p.excerpt
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
-
-              %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
-                .portfolio_item_holder
-                  %figure
+                      %a.image-wrap{href: '/images/rentals/classic_bike.jpg'}
+                        = image_tag 'rentals/classic_bike_thumbnail.jpg'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
                     .thumbnail.thumbnail__portfolio
-                      %a.image-wrap{href: "#"}
-                        = image_tag 'classic_bike.jpg'
-                  .caption.caption__portfolio
-                    %h3
-                      In faucibus
-                    %p.excerpt
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+                      %a.image-wrap{href: '/images/rentals/shabby_chic_bike.jpg'}
+                        = image_tag 'rentals/shabby_chic_bike_thumbnail.jpg'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
 
-              %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
-                .portfolio_item_holder
-                  %figure
+            .row
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
                     .thumbnail.thumbnail__portfolio
-                      %a.image-wrap{href: "#"}
-                        = image_tag 'classic_bike.jpg'
-                  .caption.caption__portfolio
-                    %h3
-                      In faucibus
-                    %p.excerpt
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+                      %a.image-wrap{href: '/images/rentals/electric_scooter.jpg'}
+                        = image_tag 'rentals/electric_scooter_thumbnail.jpg', :class => 'thumbnail_center'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
+                    .thumbnail.thumbnail__portfolio
+                      %a.image-wrap{href: '/images/rentals/scooter_50cc.jpg'}
+                        = image_tag 'rentals/scooter_50cc.jpg'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
 
-              %li.portfolio_item.term_id_20.term_id_15.term_id_17.term_id_18.isotope-item
-                .portfolio_item_holder
-                  %figure
+            .row
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
                     .thumbnail.thumbnail__portfolio
-                      %a.image-wrap{href: "#"}
-                        = image_tag 'classic_bike.jpg'
-                  .caption.caption__portfolio
-                    %h3
-                      In faucibus
-                    %p.excerpt
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+                      %a.image-wrap{href: '/images/rentals/scooter_125cc.jpg'}
+                        = image_tag 'rentals/scooter_125cc_thumbnail.jpg'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…
+              .span6
+                .portfolio_item
+                  .portfolio_item_holder
+                    .thumbnail.thumbnail__portfolio
+                      %a.image-wrap{href: '/images/rentals/quad_50cc.jpg'}
+                        = image_tag 'rentals/quad_50cc_thumbnail.jpg',  :class => 'thumbnail_center'
+                        %span.zoom-icon
+                    .caption.caption__portfolio
+                      %h3
+                        In faucibus
+                      %p.excerpt
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris…

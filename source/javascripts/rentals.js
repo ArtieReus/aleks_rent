@@ -23,34 +23,6 @@ jQuery(document).ready(function($) {
     gallery: {enabled:true}
   });
 
-  //$(window).load(function(){
-  //  var selector = window.location.hash.replace( /^#category/, '.term' );
-  //
-  //  if(selector == "#"){
-  //    selector = '';
-  //  }
-  //
-  //  setColumnWidth();
-  //  $container.isotope({
-  //    itemSelector : '.portfolio_item',
-  //    hiddenClass : 'portfolio_hidden',
-  //    resizable : false,
-  //    transformsEnabled : true,
-  //    layoutMode: 'fitRows',
-  //    filter: selector
-  //  })
-  //
-  //  $('#filters .active').removeClass('active')
-  //  $('#filters li a[data-filter="'+selector+'"]').parent('li').addClass('active');
-  //  change_hash(selector);
-  //
-  //  $(window).on("debouncedresize", function( event ) {
-  //    arrange();
-  //  });
-  //});
-
-
-
   function getNumColumns(){
     var $folioWrapper = $('#rentals-grid').data('cols');
 

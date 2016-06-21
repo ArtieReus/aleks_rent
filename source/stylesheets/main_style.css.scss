@@ -519,10 +519,17 @@ a.thumbnail:hover {
 	visibility:visible;
 	opacity:1;
 }
+
+.portfolio_item_holder .thumbnail__portfolio .thumbnail_center {
+  display: block;
+  margin: auto;
+}
+
 .portfolio_item_holder .caption__portfolio h3 {
 	margin-top:0px;
 	font-size:25px;
 	line-height:30px;
+  	color:#fff;
 }
 .portfolio_item_holder .caption__portfolio h3 a { color:#fff; }
 .portfolio_item_holder .caption__portfolio h3 a:hover { color:#f1b410; }
@@ -535,7 +542,7 @@ a.thumbnail:hover {
 	display:block;
 	top:50%;
 	left:50%;
-	margin:-47px 0 0 -47px;
+	margin:-110px 0 0 -47px;
 	width:95px;
 	height:95px;
 	text-align:center;
