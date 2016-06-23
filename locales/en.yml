@@ -20,3 +20,38 @@ en:
     text2: "Whether you have any interest, a technical question, a suggestion or just want to say <b>hello</b>, please contact us."
     text3: "Also find us on:"
     open_times: "Open daily between 9:00 am and 9:00 pm"
+  rentals:
+    bike_classic:
+      title: "City Bikes"
+      description: ""
+      price: ""
+    bike_shaby:
+      title: "Classic Bikes"
+      description: ""
+      price: ""
+    bike_folding:
+      title: "Folding Bikes"
+      description: ""
+      price: ""
+    bike_electric:
+      title: "Electric Scooter"
+      description: ""
+      price: ""
+    bike_scooter_50:
+      title: "Scooter 50cc"
+      description: "Kymco Vitality 50cc. If you love freedom with a 50 CC SCOOTER you will drive to every corner in the city and you can park everywhere. Ideal for short trips."
+      price: ""
+    bike_scooter_125:
+      title: "Scooter 125cc"
+      description: "KYMCO Agility City 125cc. For those who wish to make short trips around the area and enjoy the sensation of the wind in their face. Ideal for two people."
+      price: ""
+    bike_quad:
+      title: "Quads 50cc"
+      description: ""
+      price: ""
+    details:
+      title: "Details"
+      performance: "Performance"
+      seat_height: "Seat height"
+      maximum_speed: "Maximum speed"
+      total_weight: "Total weight"
